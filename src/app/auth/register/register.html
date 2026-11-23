@@ -1,0 +1,32 @@
+<div class="pickup">
+    <form [formGroup]="logInForm">
+        <div class="sun">
+        <div>
+            <label>First Name</label>
+            <input type="text" placeholder="Enter Your First Name" formControlName="firstname"/>
+            
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Your Last Name" formControlName="lastName"/>
+        </div>
+        <div>
+            <label>Age </label>
+            <input type="text" placeholder="Enter Yoyur Age" formControlName="age"/>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" placeholder="Enter Your Email" formControlName="emailId"/>
+        </div>
+        <div>
+            <label>UserName</label>
+            <input type="text" placeholder="Enter UserName" formControlName="userName"/>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="text" placeholder="Enter Your Password" formControlName="passWord"/>
+        </div>
+        <button (click)="onSubmit()">Register</button>
+        </div>
+    </form>
+</div>

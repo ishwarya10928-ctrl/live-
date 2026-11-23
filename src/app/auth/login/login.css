@@ -1,0 +1,69 @@
+
+/* Main background */
+.moon {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+/* Login form */
+.moon form {
+    width: 350px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Input sections */
+.moon form div {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.moon label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.moon input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Input focus */
+.moon input:focus {
+    border-color: #243b55;
+    box-shadow: 0 0 5px rgba(36, 59, 85, 0.3);
+}
+
+/* Login button */
+.but {
+    width: 100%;
+    padding: 12px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+.but:hover {
+    background: #141e30;
+}

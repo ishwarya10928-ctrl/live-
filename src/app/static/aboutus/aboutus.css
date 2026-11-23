@@ -1,0 +1,285 @@
+/* General Product Page */
+
+.product-page {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #252b45;
+    overflow: hidden;
+}
+
+.product-page * {
+    box-sizing: border-box;
+}
+
+
+/* Hero Section */
+
+.product-hero {
+    width: 100%;
+    min-height: 290px;
+    padding: 55px 5%;
+    background: linear-gradient(
+        120deg,
+        #64b5e5,
+        #3196ce,
+        #0876b7
+    );
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 0 0;
+    clip-path: ellipse(110% 100% at 50% 0%);
+}
+
+.hero-content {
+    max-width: 1150px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-content h3 {
+    font-size: 19px;
+    color: #15365c;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #183b61;
+    max-width: 1100px;
+}
+
+.demo-btn {
+    display: block;
+    margin: 35px auto 0;
+    padding: 12px 25px;
+    background: #ffb52e;
+    color: #252525;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.demo-btn:hover {
+    background: #f39c12;
+}
+
+
+/* Why ESMACS Section */
+
+.why-esmacs {
+    padding: 45px 6% 25px;
+    background: #fff;
+}
+
+.why-esmacs h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #303044;
+}
+
+.why-esmacs p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* Features Section */
+
+.product-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.feature-card {
+    width: 250px;
+    min-height: 280px;
+    padding: 55px 25px;
+    text-align: center;
+    background: #f0f1f6;
+    clip-path: polygon(
+        50% 0%,
+        95% 18%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        5% 18%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    background: #e2e8f5;
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #252b45;
+}
+
+.feature-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* Boost Section */
+
+.boost-section {
+    padding: 40px 6%;
+    background: #fff;
+}
+
+.boost-section h2 {
+    font-size: 23px;
+    color: #303044;
+    margin-bottom: 15px;
+}
+
+.boost-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* Benefits Section */
+
+.benefits-section {
+    padding: 25px 5% 60px;
+    background: #fff;
+    text-align: center;
+}
+
+.benefits-section > h2 {
+    font-size: 23px;
+    color: #303044;
+    margin-bottom: 35px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    width: 280px;
+    padding: 25px 20px;
+    border: 2px solid #91a9c8;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 17px;
+    color: #303044;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .product-hero {
+        padding: 35px 5%;
+    }
+
+    .hero-content h2 {
+        font-size: 19px;
+    }
+
+    .hero-content h3 {
+        font-size: 16px;
+    }
+
+    .product-features {
+        gap: 25px;
+    }
+
+    .feature-card {
+        width: 230px;
+    }
+
+    .benefits-container {
+        gap: 25px;
+    }
+
+    .benefit-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .why-esmacs h2,
+    .boost-section h2,
+    .benefits-section > h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .product-hero {
+        padding: 30px 20px;
+    }
+
+    .product-features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 260px;
+    }
+
+    .why-esmacs,
+    .boost-section {
+        padding: 30px 20px;
+    }
+
+    .benefits-section {
+        padding: 30px 15px;
+    }
+}

@@ -1,0 +1,285 @@
+/* Common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292d3b;
+    background: #fff;
+}
+
+/* ABOUT HERO SECTION */
+
+.about-hero {
+    width: 100%;
+    min-height: 230px;
+    padding: 65px 5%;
+    background: linear-gradient(
+        120deg,
+        #76b7df,
+        #1685c5
+    );
+    border-radius: 0 0 0 0;
+    clip-path: ellipse(110% 100% at 45% 0%);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #173c60;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* WHY CHOOSE SECTION */
+
+.why-choose {
+    padding: 35px 6% 20px;
+}
+
+.why-choose h2,
+.mission h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.why-choose p,
+.mission p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* MISSION SECTION */
+
+.mission {
+    padding: 20px 6% 35px;
+}
+
+.mission h2 {
+    margin-bottom: 12px;
+}
+
+/* BENEFITS SECTION */
+
+.benefits {
+    padding: 30px 5% 60px;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 23px;
+    margin-bottom: 45px;
+    font-weight: 600;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEXAGON STYLE CARDS */
+
+.benefit-card {
+    min-height: 230px;
+    padding: 65px 20px 35px;
+    background: #f5f6fa;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+    background: #e7f2fc;
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* CONTACT PAGE */
+
+.contact-page {
+    min-height: 75vh;
+    padding: 35px 20px 60px;
+    background: #fff;
+}
+
+.contact-section {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    outline: none;
+    background: #fafafa;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.contact-form input {
+    height: 50px;
+}
+
+.contact-form select {
+    height: 45px;
+    color: #777;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #3b94ca;
+    box-shadow: 0 0 4px rgba(59, 148, 202, 0.2);
+}
+
+/* BUTTONS */
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-buttons button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.send-btn {
+    background: #428bbd;
+}
+
+.clear-btn {
+    background: #428bbd;
+}
+
+.form-buttons button:hover {
+    background: #176b9f;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 45px 6%;
+        min-height: auto;
+        clip-path: none;
+        border-radius: 0 0 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 19px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .why-choose,
+    .mission {
+        padding: 25px 5%;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefit-card {
+        min-height: 220px;
+    }
+
+    .contact-section h2 {
+        font-size: 17px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}

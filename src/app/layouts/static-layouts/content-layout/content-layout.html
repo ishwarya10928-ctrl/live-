@@ -1,0 +1,17 @@
+<header style="width:100%;height:10%;justify-content:space-evenly; background-color:black; color:white; display:flex">
+  <h1>Header</h1>
+  <h1 routerLink="/auth/login">Logout</h1>
+</header>
+<div class="main">
+  <nav class="pig">
+    <ul>
+      <li routerLink="/content/dashboard">Dashboard</li>
+      <li routerLink="/content/browser">Browser</li>
+      <li routerLink="/content/profile">Profile</li>
+      <li routerLink="/content/setting">Setting</li>
+    </ul>
+  </nav>
+  <div class="sick">
+    <router-outlet></router-outlet>
+  </div>
+</div>

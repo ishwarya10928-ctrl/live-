@@ -1,0 +1,56 @@
+<div class="main">
+@if (user(); as profile) {
+    <img [src]="profile.image" style="width: 200px; height:200px;"/>
+    <p>Name: {{ profile.firstName }} {{ profile.lastName }}</p>
+    <p>Email:{{ profile.email }}</p>
+    <p>NikeName:{{ profile.maidenName }}</p>
+    <p>Age:{{ profile.age }}</p>
+    <p>Phone:{{ profile.phone }}</p>
+    <p>Gender:{{profile.gender}}</p>
+    <p>UserNmae:{{profile.username}}</p>
+    <p>Password:{{profile.password}}</p>
+    <p>DateofBirth:{{profile.birthDate}}</p>
+    <p>BloodGroup:{{profile.bloodGroup}}</p>
+    <p>Height:{{profile.height}}</p>
+    <p>Weight:{{profile.weight}}</p>
+    <p>Color Of The Eyes:{{profile.eyeColor}}</p>
+    <p>{{profile.hair.color}}</p>
+    <p>{{profile.hair.type}}</p>
+    <p>{{profile.ip}}</p>
+    <p>{{profile.address.address}}</p>
+    <p>{{profile.address.city}}</p>
+    <p>{{profile.address.state}}</p>
+    <p>{{profile.address.stateCode}}</p>
+    <p>{{profile.address.postalCode}}</p>
+    <p>{{profile.address.coordinates}}</p>
+    <p>{{profile.address.coordinates.lat}}</p>
+    <p>{{profile.address.coordinates.lng}}</p>
+    <p>{{profile.address.country}}</p>
+    <p>{{profile.macAddress}}</p>
+    <p>{{profile.university}}</p>
+    <p>{{profile.bank}}</p>
+    <p>{{profile.bank.cardExpire}}</p>
+    <p>{{profile.bank.cardNumber}}</p>
+    <p>{{profile.bank.cardType}}</p>
+    <p>{{profile.bank.currency}}</p>
+    <p>{{profile.bank.iban}}</p>
+    <p>{{profile.company.department}}</p>
+    <p>{{profile.company.name}}</p>
+    <p>{{profile.company.title}}</p>
+    <p>{{profile.company.address.address}}</p>
+    <p>{{profile.company.address.state}}</p>
+    <p>{{profile.company.address.postalCode}}</p>
+    <p>{{profile.company.address.coordinates.lat}}</p>
+    <p>{{profile.company.address.coordinates.lng}}</p>
+    <p>{{profile.company.address.country}}</p>
+    <p>{{profile.ein}}</p>
+    <p>{{profile.ssn}}</p>
+    <p>{{profile.userAgent}}</p>
+    <p>{{profile.crypto.coin}}</p>
+    <p>{{profile.crypto.wallet}}</p>
+    <p>{{profile.crypto.network}}</p>
+    <p>{{profile.role}}</p>
+} @else if(profileError()) {
+    <p role="alert">{{ profileError() }}</p>
+}
+</div>

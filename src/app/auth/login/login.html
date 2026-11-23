@@ -1,0 +1,17 @@
+
+<div class="moon">
+    <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+        <div class="main">
+            <label for="userName">Email</label>
+            <input id="userName" type="email" placeholder="Enter Email Id" formControlName="userName"/>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" formControlName="password"/>
+        </div>
+        @if (loginError) {
+            <p class="login-error" role="alert">{{ loginError }}</p>
+        }
+        <button type="submit" class="but">Login</button>
+    </form>
+</div>

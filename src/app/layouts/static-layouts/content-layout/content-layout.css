@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    width:100%;
+    cursor: pointer;
+    list-style-type:none;
+}
+.pig{
+    background-color: aquamarine;
+    padding:10px 25px;
+    color:black;
+    width:100px;
+    height:1950px;
+ list-style-type:none;
+ line-height:40px;
+}

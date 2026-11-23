@@ -1,0 +1,76 @@
+/* Main background */
+.pickup {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form container */
+.sun {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Each input section */
+.sun div {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.sun label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.sun input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Input focus */
+.sun input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Button */
+.sun button {
+    width: 100%;
+    padding: 12px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+.sun button:hover {
+    background-color: #4b5fc7;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .sun {
+        width: 100%;
+        padding: 20px;
+    }
+}

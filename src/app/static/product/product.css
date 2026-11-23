@@ -1,0 +1,346 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263653;
+    background: #ffffff;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    width: 100%;
+    min-height: 370px;
+
+    background: linear-gradient(
+        120deg,
+        #75b7df,
+        #3295c9,
+        #0875b8
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 6%;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 0 0 30px 0;
+}
+
+/* Curved Background */
+.hero-section::before {
+    content: "";
+    position: absolute;
+
+    width: 75%;
+    height: 300px;
+
+    top: -170px;
+    left: -5%;
+
+    background: rgba(255,255,255,0.13);
+
+    border-radius: 0 0 50% 50%;
+    transform: rotate(-8deg);
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+
+    width: 110%;
+    height: 130px;
+
+    bottom: -95px;
+    left: -5%;
+
+    background: #ffffff;
+
+    border-radius: 50% 50% 0 0;
+    transform: rotate(5deg);
+}
+
+
+/* Hero Content */
+.hero-content {
+    width: 65%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.hero-content h3 {
+    color: #102c57;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.demo-btn {
+    display: inline-block;
+
+    background: #ffbb35;
+    color: #263653;
+
+    padding: 9px 18px;
+
+    text-decoration: none;
+
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.demo-btn:hover {
+    background: #f29c16;
+    transform: translateY(-2px);
+}
+
+
+/* Hero Image */
+.hero-image {
+    width: 35%;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 280px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome-section {
+    width: 100%;
+    padding: 25px 30px;
+    background: #ffffff;
+}
+
+.welcome-section h2 {
+    font-size: 22px;
+    color: #263653;
+
+    margin-bottom: 12px;
+}
+
+.welcome-section p {
+    font-size: 14px;
+
+    color: #555555;
+
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+/* =========================
+   KEY FEATURES SECTION
+========================= */
+
+.features-section {
+    width: 100%;
+    padding: 75px 45px 40px;
+    background: #ffffff;
+}
+
+.features-section h2 {
+    font-size: 21px;
+    color: #263653;
+
+    margin-bottom: 35px;
+}
+
+
+/* Features Grid */
+.features-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 40px;
+    row-gap: 30px;
+
+    max-width: 900px;
+}
+
+
+/* Individual Feature */
+.feature-item {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 65px;
+}
+
+
+/* Feature Icons */
+.feature-icon {
+    width: 75px;
+    min-width: 75px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 42px;
+}
+
+
+/* Feature Text */
+.feature-item p {
+    font-size: 15px;
+    color: #444444;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+.back-to-top {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 40px;
+    height: 40px;
+
+    background: #172b4d;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    background: #0875b8;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 17px;
+    }
+
+    .hero-content h3 {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .hero-image img {
+        height: 220px;
+    }
+
+    .welcome-section {
+        padding: 25px 20px;
+    }
+
+    .features-section {
+        padding: 40px 20px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h2 {
+        font-size: 16px;
+    }
+
+    .feature-item {
+        gap: 12px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        min-width: 60px;
+        font-size: 35px;
+    }
+
+    .feature-item p {
+        font-size: 13px;
+    }
+
+}
